@@ -15,7 +15,7 @@ public class HelloApplication {
         Jouet echecLumineux = new Jouet("Echec lumineux", "Bois", 20, 2);
 
         int choix;
-        while (choix != 4) {
+        do {
             System.out.println("1. Afficher l'état des jouets");
             System.out.println("2. Augmenter/Diminuer le prix des jouets");
             System.out.println("3. Intervertir les catégories des jouets");
@@ -40,7 +40,7 @@ public class HelloApplication {
                 case 4:
                     System.out.println("Au revoir !");
             }
-        }
+        } while (choix != 4);
     }
 
     private static void afficherEtatJouets(Jouet jouet1, Jouet jouet2) {
