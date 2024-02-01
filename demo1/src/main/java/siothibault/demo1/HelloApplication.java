@@ -10,11 +10,12 @@ import java.util.Scanner;
 
 public class HelloApplication {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
         Jouet barbie = new Jouet("Poupée Barbie", "Plastique", 15, 1);
         Jouet echecLumineux = new Jouet("Echec lumineux", "Bois", 20, 2);
-
+        Scanner scanner = new Scanner(System.in);
         int choix;
+
         do {
             System.out.println("1. Afficher l'état des jouets");
             System.out.println("2. Augmenter/Diminuer le prix des jouets");
